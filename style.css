@@ -1,0 +1,90 @@
+body {
+    background-color: rgb(255, 0, 0);
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    align-items: center;
+    height: 100vh;
+
+}
+.container {
+    background-color: rgb(0, 0, 0);
+    height: 220px;
+    width: 400px;
+    border-radius: 8px;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: transform 500ms ease-in-out;
+}
+
+.linhas {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.materia {  
+    border-radius: 10px;
+    border: solid 2px rgb(255, 255, 255);
+    margin-left: 10px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+    backface-visibility: hidden;
+}
+
+.namemateria {
+    padding: 5px;
+    font-weight: bold;
+    color: rgb(252, 252, 252);
+    margin: 0;
+    font-size: 18px;
+}
+
+.question {
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 10px;
+backface-visibility: hidden;
+width: 100%;
+height: 50%;
+}
+
+
+.pquestion {
+    font-size: 26px;
+    color: rgb(255, 255, 255);
+   
+}
+
+.container:hover {
+    transform: rotateY(180deg);
+    
+}
+.container:hover .resposta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.resposta {
+display: flex;
+transform: rotateY(180deg);
+margin-left: -10px;
+margin-top: -110px;
+}
+
+.presposta {
+    color: rgb(255, 255, 255);
+    font-size: 26px;
+}
+
+.resposta, 
+.question {
+    backface-visibility: hidden;
+
+}
